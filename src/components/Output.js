@@ -3,7 +3,6 @@ import "../scss/output.scss";
 import user from "../img/usernf.png"
 import About from "./About";
 import Result from "./Result";
-import searchImage from "../img/search-image.png";
 
 const Output = ({ info ,repos, loading, isFind }) => {
 

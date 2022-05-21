@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState} from "react";
 import "./scss/_base.scss";
 import "./scss/input.scss";
 import gitHubImage from "./img/Vector.png";
@@ -17,6 +17,8 @@ const App = () => {
   const [loading, setLoading] = useState(false);
   const [isSearch, setSearch] = useState(false);
 
+
+
   const search = async (e) => {
     if (e.key === "Enter") {
       setSearch(true);
@@ -32,7 +34,6 @@ const App = () => {
         setRepos(result_rep.data);
         setInfo(result_info.data);
         setLoading(false);
-        console.log(result_rep.data);
       } catch (err) {
         setFind(false)
         setLoading(false);
@@ -45,9 +46,6 @@ const App = () => {
     setInput(e.target.value);
   };
 
-  // console.log(repos)
-  // console.log(repos.length)
-  //console.log(repos);
   return (
     <div className="wrapper">
       <div className="input-bar">

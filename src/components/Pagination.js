@@ -5,13 +5,6 @@ import ReactPaginate from "react-paginate";
 function Items({ currentItems }) {
   return (
     <ul className="list-of-rep">
-      {/*{currentItems &&*/}
-      {/*      currentItems.map((item, i) => (*/}
-      {/*            <div key={i}>*/}
-      {/*                  {item.name}*/}
-      {/*            </div>*/}
-      {/*      ))}*/}
-
       {currentItems &&
         currentItems.map((rep, i) => (
           <li className="list-of-rep__item item" key={i}>
@@ -37,7 +30,6 @@ const Pagination = ({ repos }) => {
   useEffect(() => {
     const endOffset = itemOffset + 4;
     setCurrentItems(repos.slice(itemOffset, endOffset));
-    console.log(currentItems);
     setPageCount(Math.ceil(repos.length / 4));
   }, [itemOffset, 4]);
 
