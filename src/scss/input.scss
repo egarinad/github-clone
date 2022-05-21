@@ -1,0 +1,105 @@
+@import "./base";
+
+.wrapper {
+  background-color: #E5E5E5;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  min-height: 100vh;
+  overflow: hidden;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.input-bar-container {
+  padding-left: 41px;
+  margin: 0 auto;
+  max-width: 1366px;
+  ////Если вы имели ввиду, что должен был быть ограничивающий контейнер на 1366px, то я мог сделать и так, просто если верстать по макету то должно выглядеть так, как я  по итогу сделал
+  display: flex;
+  flex-direction: row;
+}
+
+.input-bar {
+  background-color: #0064eb;
+
+  &__github-image {
+    max-width: 40px;
+    max-height: 40px;
+    width: 10vw;
+    height: 10vw;
+    margin: 16px 22px 16px 0;
+  }
+
+  &__box {
+    margin: 16px 41px 16px 0;
+    border-radius: 6px;
+    max-width: 500px;
+    width: 90vw;
+    max-height: 40px;
+    height: 10vw;
+    background-color: white;
+  }
+}
+
+.box {
+  display: flex;
+  &__image {
+    width: 14px;
+    height: 14px;
+    // margin: 13px 11px 13px 19px;
+    margin: auto 11px auto 19px;
+  }
+
+  &__input {
+    //border: 1px solid black;
+    font-size: 14px;
+
+    //display: flex;
+    //align-items: center;
+    letter-spacing: 0.01em;
+  }
+}
+
+@media (max-width: 500px) {
+  .input-bar-container {
+    justify-content: space-between;
+    padding-left: 10px;
+  }
+
+  .box {
+    &__image {
+      margin: auto 7px auto 7px;
+    }
+    &__input {
+      margin-right: 1vw;
+    }
+  }
+
+  .input-bar {
+    &__box {
+      margin-right: 10px;
+    }
+  }
+}
+
+.search {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: auto 0;
+
+  &__image {
+    width: 64px;
+    height: 64px;
+    margin-bottom: 46px;
+    color: #808080;
+  }
+  &__text {
+    font-size: 22px;
+    line-height: 140%;
+    text-align: center;
+    width: 210px;
+    color: #808080;
+  }
+}

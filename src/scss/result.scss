@@ -1,0 +1,73 @@
+.repos {
+
+  margin-top: 28px;
+}
+
+.name {
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 130%;
+  margin-bottom: 29px;
+  @media (max-width: 900px){
+    text-align: center;
+  }
+}
+
+
+
+.list-of-rep {
+  @media (max-width: 900px){
+    width: 80vw;
+    margin: 0 auto;
+  }
+
+  &__item{
+
+  }
+}
+
+.item{
+  border-radius: 6px;
+  padding: 24px 32px 24px 32px;
+  background-color: #FFFFFF;
+  margin-bottom:24px;
+  max-width: 877px;
+  width: 50vw;
+  @media (max-width: 900px){
+    width: 80vw;
+  }
+
+  &__name{
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    color: #0064EB;
+  }
+
+  &__description{
+    margin-top: 16px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+  }
+}
+
+
+.norep{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: auto 0 ;
+  &__img{
+
+    width: 110px;
+    height: 110px;
+    margin-bottom: 24px;
+  }
+  &__text{
+    text-align: center;
+    font-size: 22px;
+    line-height: 140%;
+    color: #808080;
+  }
+}
