@@ -7,20 +7,6 @@ import searchImage from "../img/search-image.png";
 
 const Output = ({ info ,repos, loading, isFind }) => {
 
-
-
-  // const listRepos =
-  //      repos.length !== 0 ? (
-  //           repos.map((item) => (
-  //           <li className="rep" key={item.id}>
-  //                 {item.name}
-  //           </li>
-  //           ))
-  //   ) :
-  //   (
-  //     <li>No repos</li>
-  //   );
-
   if (loading) {
       return (
             <div className="output-loader">

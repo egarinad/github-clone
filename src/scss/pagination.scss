@@ -1,0 +1,44 @@
+.pagination{
+  margin: 0 auto;
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+}
+.pages{
+  display: inline-block;
+}
+.iter{
+  color: #0064EB;
+  font-size: 20px;
+}
+
+.pages-container{
+  text-align: right;
+  @media (max-width: 900px){
+    text-align: center;
+    margin-bottom: 30px;
+  }
+}
+
+
+
+
+
+
+.it{
+  padding: 5px;
+  font-size: 20px;
+  margin-right: 10px;
+}
+
+//.disabled-page {
+//  color: #0064EB;
+//}
+
+.active{
+  padding: 5px;
+  border: solid 1px #808e9b;
+  border-radius: 5px;
+  color: black;
+
+}

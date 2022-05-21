@@ -1,7 +1,5 @@
 
 
-
-
 .output-loader{
   display: flex;
   flex-direction: column;
@@ -24,10 +22,6 @@
   0% { transform: rotate(0deg); }
   100% { transform: rotate(360deg); }
 }
-
-//.output {
-//  margin: auto 0;
-//}
 
 .output-container{
   display: flex;
