@@ -1,4 +1,4 @@
-import React, { useState} from "react";
+import React, {useEffect, useRef, useState} from "react";
 import "./scss/_base.scss";
 import "./scss/input.scss";
 import gitHubImage from "./img/Vector.png";
@@ -16,6 +16,11 @@ const App = () => {
 
   const [loading, setLoading] = useState(false);
   const [isSearch, setSearch] = useState(false);
+
+  const inputRef = useRef(null);
+  useEffect(()=>{
+    inputRef.current.focus()
+  })
 
 
 
@@ -62,6 +67,7 @@ const App = () => {
               onChange={handleChange}
               value={input}
               onKeyPress={search}
+              ref={inputRef}
             />
           </div>
         </div>
