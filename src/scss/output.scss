@@ -1,6 +1,5 @@
 
-
-.output-loader{
+.output-loader {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -19,21 +18,25 @@
 }
 
 @keyframes spin {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
-.output-container{
+.output-container {
   display: flex;
   flex-direction: row;
   max-width: 1366px;
   margin: 0 auto;
-  @media (max-width: 900px){
+  @media (max-width: 900px) {
     flex-direction: column;
   }
 }
 
-.not-found-container{
+.not-found-container {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -53,6 +56,7 @@
     margin-bottom: 24px;
     color: #808080;
   }
+
   &__text {
     font-size: 22px;
     line-height: 140%;
